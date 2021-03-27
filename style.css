@@ -1,0 +1,78 @@
+
+/*para pc/laptop*/
+body {
+	background-color: papayawhip;
+}
+
+
+@media( min-width: 900px) {
+
+   .container{
+   	display: grid;
+   	grid-template-columns: repeat(8, 1fr) ;
+   	grid-template-rows: 1fr;
+   }
+}
+
+
+
+
+
+ /*para tablets*/
+@media (max-width: 900px ) {
+
+     body {
+     	background-color:plum;
+     	 } 
+     	 .container{
+           display: grid;
+           grid-template-columns: repeat(4, 1fr) ;
+           grid-template-rows: 1fr 1fr;
+     	 }
+}
+
+
+  /*para telefonos*/
+@media (max-width: 600px ) {
+     body {
+     	background-color:violet;
+     }
+
+      .container {
+     	display: grid;
+       grid-template-columns: repeat(2, 1fr) ;
+	   grid-template-rows:  repeat(4, 1fr) ;
+     }
+	     
+}
+
+
+
+}
+ /*para smartwatch*/
+@media (max-width: 300px ) {
+     body {
+     	background-color:tan; 
+     	 }
+     	 .container {
+           display: grid;
+           grid-template-columns:  1fr;
+           grid-template-rows: repeat(8, 1fr) ;
+     	 } 
+}
+
+
+	
+
+.grid-item {
+	height: auto;
+	margin: 4px;
+	text-align: center;
+}
+
+
+.grid-item img {
+  width: 135px;
+  height: 135px;
+  object-fit: cover;
+}
